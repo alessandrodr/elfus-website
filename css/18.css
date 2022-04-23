@@ -281,55 +281,82 @@ h1, h2, h3{
 
 
 
-/* CONTACT */
-#contact{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../gallery/Elfus.webp') center/cover no-repeat fixed;
-    background-size: 1250px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000;    
+/* NEW CONTACT SECTION */
+
+#contact-new{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../gallery/Elfus.webp') center/cover no-repeat fixed;
 }
 
-.contact-content{
-    flex-direction: column;
-    align-items: stretch;
-}
-.contact-left{
-    margin-bottom: 5rem;
-}
-.contact-left .lead{
-    padding: 0.5rem;
-    color: white;
-    
+#contact-new .title{
+    position: relative;
+    align-items: center;
+    top: 80px;
+    margin-bottom: 100px;
 }
 
-.contact-left form{
-    margin-top: 3rem;
-}
-.contact-left form .form-control{
-    display: block;
-    margin: 1.6rem 0;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    padding: 1rem;
+.hero-contact{
     width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
 }
-.contact-left form .form-control::placeholder{
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
 }
-.contact-left .btn-submit{
-    padding: 1.4rem 3rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    margin-top: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.6rem;
-    transition: var(--transition);
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+
 }
-.contact-left .btn-submit:hover{
-    background-color: #000;
+.button-contact{
+    padding: 10px 0;
+    color: #fff;
+    outline: none; 
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
 }
 
 
